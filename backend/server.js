@@ -10,6 +10,7 @@ const bodyParser = require('body-parser')
 require('express-async-errors')
 const cors = require('cors')
 
+
 app.use(cors())
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -73,6 +74,7 @@ if (!isProduction) {
       }});
     });
   }
+
 
 // production error handler
 // no stacktraces leaked to user

@@ -14,7 +14,7 @@ let storedTransactions = [];
 function updateCronJobInterval(minutes) {
     const query = {
         query: `{
-          EVM(network: eth) {
+          EVM(network: bsc) {
             Transfers(orderBy: {descending: Transaction_Value}, limit: {count: 10}) {
               Transaction {
                 Hash
